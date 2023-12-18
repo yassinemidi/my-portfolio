@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/me.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
+import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -48,6 +53,7 @@ export const Banner = () => {
   }
 
   return (
+    <Router>
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
@@ -76,7 +82,12 @@ export const Banner = () => {
       </p>
     </>
                   {/* end */}
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  
+                  
+                  <HashLink to='#connect'>
+                  <button className="vvd" onClick={() => console.log('connect')}><span>Let’s Connect</span> <ArrowRightCircle size={25} /></button>
+                  </HashLink>
+                  
               </div>}
             </TrackVisibility>
           </Col>
@@ -91,5 +102,6 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
+    </Router>
   )
 }
