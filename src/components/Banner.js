@@ -62,7 +62,7 @@ export const Banner = () => {
                 {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                     <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{`Hi! I'm Yassine MIDI`} <br /> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                    <h1>{`Hi! I'm Yassine MIDI`} <br /> <span className="txt-rotate" ><span className="wrap">{text}</span></span></h1>
                     {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
                     {/* begining */}
                     <>
@@ -73,13 +73,7 @@ export const Banner = () => {
                       <h2>À propos de moi</h2>
 
                       <p>Je suis certifié Salesforce Administrateur, Salesforce Développeur 1 et Salesforce associé. Actuellement en cours de préparation pour la certification Omnistudio, je suis constamment en quête d'élargir mes connaissances pour rester à la pointe des dernières avancées technologiques.</p>
-
-
-
-
-
-                      <p>N'hésitez pas à explorer mon portfolio pour découvrir certains de mes projets et réalisations. Je suis ouvert aux opportunités de collaboration et de nouveaux défis. Si vous partagez une passion pour l'innovation et l'excellence, je serais ravi de discuter de la manière dont nous pourrions travailler ensemble.
-                      </p>
+                      
                     </>
                     {/* end */}
 

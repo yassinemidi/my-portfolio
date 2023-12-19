@@ -14,10 +14,12 @@ console.log('email',process.env.EMAIL_USER);
 console.log('psw',process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.office365.com', // Outlook SMTP server
+  port: 587, // Use port 587 for TLS
+  secure: false, // false for TLS - as a boolean not as string - but the default is false so just remove this completely
   auth: {
-    user: "********@gmail.com",
-    pass: ""
+    user: 'yassineitsrunner@outlook.com',
+    pass: 'Azer.0tyui',
   },
 });
 
@@ -36,7 +38,7 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "********@gmail.com",
+    to: "yassinemidi1@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
