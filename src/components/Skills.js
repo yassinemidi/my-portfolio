@@ -38,6 +38,14 @@ export const Skills = () => {
                         <p>En tant que développeur fullstack, je maîtrise plusieurs langages et outils de développement,<br></br> comme cela est mentionné dans les domaines suivants :</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Java | Spring boot</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>ReactJs | Angular</h5>
+                            </div>
+                            <div className="item">
                                 <img src={meter3} alt="Image" />
                                 <h5>Salesforce Administration</h5>
                             </div>
@@ -47,11 +55,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Salesforce OmniStudio</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>FullStack Java | Spring boot | ReactJs | Angular</h5>
+                                <h5>Vlocity Development</h5>
                             </div>
                         </Carousel>
                     </div>
