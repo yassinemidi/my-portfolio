@@ -79,18 +79,17 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Salesforce</Nav.Link>
+                      <Nav.Link eventKey="first">FullStack Dev</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">FullStack Projects</Nav.Link>
+                      <Nav.Link eventKey="second">Salesforce Dev</Nav.Link>
                     </Nav.Item>
-                    
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">Salesforce Vlocity</Nav.Link>
+                    </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                        <p>Soonly accessible...</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
                       <Row>
                         {
                           projectsFullStack.map((project, index) => {
@@ -104,7 +103,12 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                  
+                    <Tab.Pane eventKey="second">
+                      <p>Soonly accessible...</p>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                      <p>Soonly accessible...</p>
+                    </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>}
